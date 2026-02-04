@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  margin: 0;
+  background: #111;
+}
+
+.overlay {
+  background: rgba(0,0,0,.6);
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.modal {
+  background: #f9fafb;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+/* Social Media Icons */
+.socials {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #333;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icon:nth-child(1):hover { color: #ea4335; } /* Email */
+.social-icon:nth-child(2):hover { color: #333; }    /* GitHub */
+.social-icon:nth-child(3):hover { color: #e4405f; } /* Instagram */
+.social-icon:nth-child(4):hover { color: #3b5998; } /* Facebook */
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.experience {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.experience span {
+  float: right;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.label {
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+.project {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
